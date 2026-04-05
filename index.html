@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhật Trình - Trang cá nhân</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(to right, #e0f7fa, #ffffff);
+    }
+
+    header{
+        background: linear-gradient(135deg, #4682B4, #5F9EA0);
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    nav{
+        background: #222;
+        text-align: center;
+        padding: 12px;
+    }
+
+    nav a{
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover{
+        color: #00ffff;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .left{
+        flex: 1;
+        text-align: center;
+    }
+
+    .left img{
+        width: 200px;
+        border-radius: 50%;
+        border: 5px solid #4682B4;
+        transition: 0.4s;
+    }
+
+    .left img:hover{
+        transform: scale(1.1);
+    }
+
+    .right{
+        flex: 2;
+        padding: 20px;
+    }
+
+    h2{
+        color: #2E8B57;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+    }
+
+    ul{
+        padding-left: 20px;
+        line-height: 1.8;
+    }
+
+    footer{
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px){
+        .container{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Đào Nhật Trình</h1>
+    <p>Kỷ niệm mỗi ngày là một cơ hội mới ✨</p>
+</header>
+
+<nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Sở thích</a>
+    <a href="#">Liên hệ</a>
+</nav>
+
+<div class="container">
+    <div class="left">
+        <img src="avatar.jpg" alt="Avatar">
+    </div>
+
+    <div class="right">
+        <div class="card">
+            <h2>Thông tin cá nhân</h2>
+            <p>
+                <strong>Họ tên:</strong> Đào Nhật Trình <br>
+                <strong>Ngày sinh:</strong> 26/09/2008 <br>
+                <strong>Lớp:</strong> 12A6 <br>
+                <strong>Trường:</strong> THPT Số 1 Nguyễn Huệ
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="margin:20px;">
+    <h2>Sở thích</h2>
+    <ul>
+        <li>💪Tập gym</li>
+        <li>⚽Đá bóng</li>
+        <li>🎧 Nghe nhạc</li>
+        <li>🎮Chơi game</li>
+    </ul>
+</div>
+
+<div class="card" style="margin:20px;">
+    <h2>Liên hệ</h2>
+    <p>
+        📧 Email: daonhattrinh2008@gmail.com <br>
+        📘 Facebook: https://www.facebook.com/share/18SNaue92L/
+    </p>
+</div>
+
+<footer>
+    © 2026 - Nhật Trình
+</footer>
+
+</body>
+</html>
